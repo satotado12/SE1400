@@ -24,10 +24,18 @@
 
     <main>
         <h2>Audience</h2>
-        <h4>Geolocation</h4>
-        
 
+        <h4>Geolocation</h4>
+        <p>Anyone from anywhere with a computer is my audience</p>
+
+        <h4>Age</h4>
+        <p>21+</p>
         
+        <h4>Gender</h4>
+        <p>Any gender can gamble but probably men</p>
+
+        <h4>People who are going to be addicted to gambling</h4>
+
     </main>
     <footer>
         <h6>Copyright &copy; 2026</h6>
