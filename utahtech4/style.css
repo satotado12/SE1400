@@ -1,9 +1,15 @@
+* { 
+    box-sizing: border-box; 
+}
+
+
 body {
 background-color: #FFFFFF;
 color: #666666;
 font-family: verdana, Arial, sans-serif;
 background-image: linear-gradient(to bottom, #eeeeee, #ffffff);
 background-attachment: fixed;
+margin: 0px;
 }
 
 
@@ -27,20 +33,22 @@ header h1 {
     background-position: right top;
     padding-left: 1em;
     background-origin: content-box;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 
 nav{
     font-weight: bold;
-    background-color: #f3f3f3;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
+    background-color: #424242;
+    padding: 0;
+    margin: 0;
 }
 nav a{
     text-decoration: none;
+    color: #ffffff;
+    padding: 1rem 0rem;
+    display: block;
+    text-align: center;
 }
 
 h2{
@@ -96,16 +104,62 @@ footer{
     padding: 1rem;
 }
 
+nav a:hover {
+    background-color: #ba1c21;
+}
 
+nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+
+nav ul li{
+    width: 100%;
+}
 
 
 
 #wrapper {
-width: 80%;
-margin-right: auto;
-margin-left: auto;
-background-color: #ffffff;
-min-width: 960px;
-max-width: 2048px;
-box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
+display: grid;
+grid-auto-rows: minmax(0,auto);
+grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0,175px)) minmax(0px,1fr);
+}
+
+header{
+    grid-row: 1 / 2;
+    grid-column: 2 / -2;
+}
+
+nav{
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
+}
+
+#homehero, #studenthero, #facultyhero{
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+}
+
+main{
+    grid-row: 4 / 5;
+    grid-column: 2 / -2;
+    background-color: #ffffff;
+}
+
+footer{
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main img{
+    float: right;
+    padding-left: 2rem;
 }
