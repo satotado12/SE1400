@@ -98,7 +98,7 @@ dt{
 }
 
 #alumnihero {
-    background-image: url('alumnihero.jpg');
+    background-image: url(Images/alumnihero.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
