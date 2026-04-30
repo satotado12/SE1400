@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blackjack - My Casino Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Fauna+One&display=swap" rel="stylesheet">
+    
+    <!-- Super Simple Slider -->
+    <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <h1>My Casino Site</h1>
+        </header>
+
+        <nav>
+            <a href="texas-holdem.html">Texas Hold-Em</a>
+            <a href="blackjack.html" class="active">Blackjack</a>
+            <a href="index.html">Home</a>
+            <a href="roulette.html">Roulette</a>
+            <a href="slots.html">Slot Machine</a>
+        </nav>
+
+        <section class="hero">
+            <img src="images/blackjack banner.jpg" alt="Blackjack table with dealer and player cards">
+        </section>
+
+        <div class="main-content">
+            <div class="text-column">
+                <h2>Blackjack</h2>
+                
+                <p><strong>Practice here:</strong> <a href="https://www.247blackjack.com/" target="_blank" rel="noopener">Play Blackjack Online</a> (Free - Not Real Money)</p>
+                
+                <p class="tagline">Beat the dealer without going over 21 — the most popular card game in the world.</p>
+                
+                <h3>How to Play</h3>
+                <p>Blackjack is a fast-paced game combining skill and luck. The goal is to get a hand total as close to 21 as possible without busting, while beating the dealer's hand.</p>
+                
+                <p>Players can <strong>Hit</strong> to take another card or <strong>Stand</strong> with their current total. The dealer must hit on 16 and stand on 17 in most versions.</p>
+
+                <h3>Card Values</h3>
+                <ul>
+                    <li>Number cards (2–10) = face value</li>
+                    <li>Face cards (Jack, Queen, King) = 10 points</li>
+                    <li>Ace = 1 or 11 (whichever benefits the hand)</li>
+                </ul>
+
+                <h3>Basic Strategy Tips</h3>
+                <ul>
+                    <li>Always hit on 8 or less</li>
+                    <li>Stand on 17 or higher</li>
+                    <li>Split Aces and 8s</li>
+                    <li>Never take insurance</li>
+                    <li>Double down on 11 when the dealer shows a low card</li>
+                </ul>
+
+                <p>Mastering basic strategy can reduce the house edge to under 1%. Practice here and on the linked site to improve your skills.</p>
+            </div>
+
+            <!-- Right column with 2 simple sliders -->
+            <div class="images-column">
+                <h4 style="text-align:center; margin-bottom:15px;">Blackjack Gallery</h4>
+                
+                <!-- Slider 1 -->
+                <div class="slider" style="margin-bottom: 40px;">
+                    <img src="images/blackjack img1.jpg" alt="Blackjack cards">
+                    <img src="images/blackjack img2.jpg" alt="Blackjack hand">
+                </div>
+
+                <!-- Slider 2 -->
+                <div class="slider">
+                    <img src="images/blackjack img3.jpg" alt="Poker chips">
+                    <img src="images/blackjack img4.jpg" alt="Two Aces">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Copyright &copy; 2026 My Casino Site<br>
+            For educational and entertainment purposes only. Gamble responsibly.
+        </footer>
+
+    </div>
+
+    <!-- Scripts for Super Simple Slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="sss/sss.min.js"></script>
+    <script>
+        jQuery(function($) {
+            $('.slider').sss({
+                slideShow: true,
+                speed: 4000
+            });
+        });
+    </script>
+</body>
+</html>
